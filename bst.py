@@ -132,20 +132,15 @@ if __name__ == '__main__':
     y = []
     zzz = []
     print("insert 50 30 20 40 70 60 80 ya hrchi mad nazareton hst:")
-    bst.insert(x:=int(input(('INPUT FOR INSERT 1=> '))))
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 2=> ')))) 
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 3=> ')))) 
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 4=> ')))) 
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 5=> ')))) 
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 6=> ')))) 
-    y.append(x)
-    bst.insert(x:=int(input(('INPUT FOR INSERT 7=> '))))
-    y.append(x)
+    while 1:
+        x = input(('INPUT FOR INSERT(For stop just click on enter)=> '))
+        
+        if x == '':
+            break
+        if x != '':
+            bst.insert(int(x))
+            y.append(int(x))
+
     print("inorder Permutation:")
     bst.inorder(bst.root)
     search = int(input(('INPUT FOR SEARCH, just put 80 or everything you want base on inputs in tree=> ')))
