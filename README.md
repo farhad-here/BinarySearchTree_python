@@ -1,8 +1,12 @@
 # 🎉BinarySearchTree project
-## ✍️This is for my university's project
 ## 🧑Manual
-### everything is in the venv
-##### if you dont want use venv:
+-> everything is in the venv
+
+```bash
+pi
+```
+
+##### create and virtual environment and install these:
 ```
 pip install binarytree 
 ```
